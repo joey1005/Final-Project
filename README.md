@@ -1,4 +1,4 @@
-# Final-Project
+# Final Project
 
 
 In this final project, I am trying to explore the relationship between reality and illusion. 
