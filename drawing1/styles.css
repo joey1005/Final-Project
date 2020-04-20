@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes float{
+	from {transform: translateX(-400px);}
+	to {transform: translateX(1200px);}
+}
+
+#container {
+	background-color:white;
+	background-image:  url(images/sky.jpg);
+	background-size: cover;
+    position:fixed;
+    top: 0;
+    left:0;
+    min-height:100%;
+    min-width:100%;
+    display:grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 33%);
+    
+}
+
+
+.portrait {
+	position: absolute;
+	max-width: 100%;
+	max-height: auto;
+	grid-column: 2/3;
+	grid-row:2/4;
+	bottom: 0;
+}
+
+.cloud1 {
+	position: absolute;
+	top: 30px;
+	max-width: 100%;
+	grid-column: 1/2;
+	grid-row:1/2;
+	mix-blend-mode: screen;
+	animation-name: float;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	z-index: -1;
+}
+
+.cloud2 {
+	position: absolute;
+	max-width:150%;
+	grid-column: 1/2;
+	grid-row: 3/4;
+	mix-blend-mode: screen;
+	animation-name: float;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+}
+
