@@ -1,5 +1,5 @@
 # Final-Project
-##Final Project for Drawing on the Web
+
 
 In this final project, I am trying to explore the relationship between reality and illusion. 
 Through the three drawings, I want to demonstrate the evolvement of female portraits in art history, among different but representative art historical periods and styles: realism, surrealism, and cubism. More specifically, I will select three paintings representing each period, which are Antonio del Pollaiuolo’s Profile Portrait of a Young Lady (1465), Frida Kahlo’s Self-Portrait with Thorn Necklace and Hummingbird (1940), and Pablo Picasso’s Portrait of Dora Maar (1937).
