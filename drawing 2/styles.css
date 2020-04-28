@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes flyright{
+	from {transform: translateX(-400px) translateY(50px);}
+	to {transform: translateX(400px) translateY(150px);}
+}
+
+@keyframes flyleft{
+	from {transform: translateX(800px) translateY(-200px);}
+	to {transform: translateX(-390px) translateY(210px);}
+}
+
+
+
+#container {
+	background-color:white;
+	background-image:  url(images/leaves.jpg);
+	background-size: cover;
+    position:fixed;
+    top: 0;
+    left:0;
+    min-height:100%;
+    min-width:100%;
+    display:grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 33%);
+    
+}
+
+.portrait {
+	position: absolute;
+	max-width: 120%;
+	max-height: auto;
+	grid-column: 2/3;
+	grid-row:2/4;
+	bottom: 0;
+}
+
+.butterfly {
+	position: absolute;
+	top: 30px;
+	max-width: 50%;
+	grid-column: 1/2;
+	grid-row:1/2;
+	mix-blend-mode: screen;
+	animation-name: flyright;
+	animation-duration: 10s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	
+}
+
+.butterfly2 {
+	position: absolute;
+	left: 30px;
+	top: 50px;
+	max-width: 100%;
+	grid-column: 1/2;
+	grid-row:2/4;
+	mix-blend-mode: normal;
+
+	
+}
+
+.butterfly2-2 {
+	position: absolute;
+	right: 0px;
+	top: 50px;
+	max-width: 100%;
+	grid-column: 3/4;
+	grid-row:2/4;
+	mix-blend-mode: normal;
+}
+
+.butterfly3 {
+	position: absolute;
+	top: 30px;
+	right: 0px;
+	max-width: 50%;
+	grid-column: 3/4;
+	grid-row:1/2;
+	mix-blend-mode: screen;
+	animation-name: flyleft;
+	animation-duration: 20s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
