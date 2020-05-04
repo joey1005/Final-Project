@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 
 body {
     margin: 0;
@@ -9,6 +10,14 @@ body {
 	to {transform: translateX(1200px);}
 }
 
+  p {
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+      }
+      a:link, a:visited{
+        text-decoration: none;
+        color: white;
+      }
 #container {
 	margin: 0;
     padding: 0;
@@ -17,13 +26,13 @@ body {
 	background-size: cover;
     position:fixed;
     top: 0;
-    left:0;
+    left:0; 
     min-height:100%;
     min-width:100%;
     display:grid;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(3, 33%);
-    
+
 }
 
 

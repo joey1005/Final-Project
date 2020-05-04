@@ -26,7 +26,7 @@
       }
 
       function draw1() {
-        context1.drawImage(image1, 0, 0, 200, 400);
+        context1.drawImage(image1, 0, 0, 300, 400);
       };
 
       window.addEventListener('load', setup1);
@@ -59,7 +59,7 @@
       }
 
       function draw2() {
-        context2.drawImage(image2, 0, 0, 200, 400);
+        context2.drawImage(image2, 0, 0, 300, 400);
       };
 
       window.addEventListener('load', setup2);
@@ -92,7 +92,7 @@
       }
 
       function draw3() {
-        context3.drawImage(image3, 0, 0, 200, 400);
+        context3.drawImage(image3, 0, 0, 300, 400);
       };
 
       window.addEventListener('load', setup3);

@@ -6,8 +6,8 @@ const container= document.getElementById('container');
 
 function init() {
   scene = new THREE.Scene();
-  let width = window.innerWidth;
-  let height = window.innerHeight;
+  let width = 1500;
+  let height = 800;
 
   //cubemap background
   scene.background = new THREE.CubeTextureLoader()
@@ -41,7 +41,7 @@ function init() {
 
 
   controls = new THREE.OrbitControls(camera, renderer.domElement);
-  document.body.appendChild(renderer.domElement);
+  container.appendChild(renderer.domElement);
 }
 
 function animate() {

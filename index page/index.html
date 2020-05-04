@@ -8,35 +8,55 @@
     <style>
       body {margin: 0;}
 
-      #frame {
-        width: 760px;
-        height: 400px;
-        margin: auto;
-        display: flex;
-        flex-shrink: 0;
-        justify-content: space-evenly;
-        z-index: 1;
-      }
+    #frame {
+    position: absolute;
+    width: 1500px;
+    height: 400px;
+    top: 180px;
+    margin: auto;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-evenly; 
+    align-items: center;
+    }
 
-      #background {
-        width:1500px;
+      #container {
+        position: absolute;
+        width: 1500px;
         height: 800px;
-        z-index: -1;
+        z-index: -100;
       }
+    #c1, #c2, #c3 {
+      border:solid 7px rgb(239, 238, 236);
+    }
+    a:hover {
+      transform: scale(1.2); 
+    }
 
-      }
     </style>
   </head>
   
   <body>
     <div id="container">
-      <canvas id="background" width="1500" height="800" style="width:1500px; height: 800px;" tabindex="0"></canvas>
+<!--   <canvas id="background" width="1500" height="800" style="width:1500px; height: 800px;" tabindex="0"></canvas> -->
     </div>
 
      <div id="frame">
-      <canvas id="c1" width="200" height="400" style="width:200px; height: 400px;"></canvas>
-      <canvas id="c2" width="200" height="400" style="width:200px; height: 400px;"></canvas>
-      <canvas id="c3" width="200" height="400" style="width:200px; height: 400px;"></canvas>
+      <a href="drawing1/index.html">
+        <div class="drawing1">
+          <canvas id="c1" width="300" height="400" style="width:300px; height: 400px;"></canvas>
+        </div>
+      </a>
+      <a href="drawing2/index.html">
+        <div class="drawing2">
+          <canvas id="c2" width="300" height="400" style="width:300px; height: 400px;"></canvas>
+        </div>
+      </a>
+      <a href="drawing3/index.html">
+        <div class="drawing3">
+          <canvas id="c3" width="300" height="400" style="width:300px; height: 400px;"></canvas>
+        </div>
+      </a>
     </div>
 
     <div style="display: none;">
@@ -52,5 +72,6 @@
     <script src="js/three.min.js"></script>
     <script src="js/OrbitControls.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/canvas.js"></script>
   </body>
 </html>
